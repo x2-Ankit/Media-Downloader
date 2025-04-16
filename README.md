@@ -1,8 +1,6 @@
 # Repo1
 This is my first repo 
 
-yfyuy
+I know nothing about git 
 
 
-dfsafsdf
-fssdfsfdfsf
