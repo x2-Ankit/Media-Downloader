@@ -45,12 +45,10 @@ If you want to create a `.exe` version of this script with a **custom icon**:
 
 ### 🔨 Build Command:
 ```bash
-pyinstaller --onefile --noconsole --icon=icon.ico yt_downloader.py
+pyinstaller --onefile --icon=icon.ico yt_downloader.py
 ```
 
 - Output will be inside the `dist/` folder
-- It will run silently in console mode without showing a terminal
-
 ---
 
 ## 👨‍💻 For Developers
