@@ -1,69 +1,115 @@
-# 📥 YouTube Video/Audio Downloader (Command-Line)
-
-A simple and efficient command-line based YouTube downloader using `yt-dlp`.
+Here’s the **finalized README.md** for your **YouTube Downloader** project, clearly distinguishing between **end-users (EXE)** and **developers (source code)**:
 
 ---
 
-## ⚙️ Features
+# **🎬 YouTube Downloader** 🚀  
 
-- 🔗 Accepts YouTube video URLs or search queries
-- 🎵 Option to download audio only (MP3)
-- 📽️ Option to download best available video (MP4)
-- 📂 Custom download directory
-- 🧠 Auto-detects type (audio/video) based on input
-- 💻 No GUI — pure command-line speed and simplicity
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)  
+[![PyInstaller](https://img.shields.io/badge/PyInstaller-5.0+-green.svg)](https://pyinstaller.org/)  
+
+A **powerful Python-based YouTube Downloader** with support for **audio (MP3)**, **video (MP4)**, and **batch downloads**.  
 
 ---
 
-## 🔧 How to Use
+## **📥 For End Users (EXE)**  
+### **Download & Run**  
+1. Download the latest **`YouTube_Downloader.exe`** from **[Releases](https://github.com/x2-Ankit/Downloader/releases)**.  
+2. Double-click to run (no installation needed).  
+3. Follow the on-screen menu to download videos/audio.  
 
-1. **Install Requirements**
-   ```bash
-   pip install yt-dlp
+**Features for EXE Users:**  
+✅ Simple GUI-like interface  
+✅ Downloads to `Desktop/Downloads` automatically  
+✅ Supports **URLs** and **song name searches**  
+✅ Batch download multiple links  
+
+---
+
+## **👨‍💻 For Developers (Source Code)**  
+### **Prerequisites**  
+- Python 3.7+  
+- `yt-dlp` (included in `requirements.txt`)  
+
+### **Setup**  
+1. **Clone the repo**:  
+   ```sh
+   git clone https://github.com/x2-Ankit/Downloader.git
+   cd Downloader
    ```
 
-2. **Run the script**
-   ```bash
-   python yt_downloader.py
+2. **Install dependencies**:  
+   ```sh
+   pip install -r requirements.txt
    ```
 
-3. **Follow the prompts**:
-   - Paste YouTube link or search query
-   - Choose download type: audio/video
-   - Set your download location
+3. **Run the script**:  
+   ```sh
+   python downloader.py
+   ```
 
----
-
-## 🛠 Build `.exe` with Custom Icon
-
-If you want to create a `.exe` version of this script with a **custom icon**:
-
-### ✅ Requirements:
-- Python 3.x
-- PyInstaller
-- `.ico` file for icon
-
-### 🔨 Build Command:
-```bash
-pyinstaller --onefile --icon=icon.ico yt_downloader.py
+### **🔧 Rebuild EXE with PyInstaller**  
+```sh
+pyinstaller --onefile --windowed --icon=icon.ico downloader.py
 ```
-
-- Output will be inside the `dist/` folder
----
-
-## 👨‍💻 For Developers
-
-If you'd like to view or modify the source code:
-
-- Download the `yt_downloader.py` file
-- Customize it to fit your needs
-- Recompile to `.exe` using the steps above
-
-You're free to tweak it and extend its functionality however you want!
+*(Outputs to `dist/` folder)*  
 
 ---
-## 🧊 Credits
 
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) for the powerful backend
+## **✨ Key Features**  
+- **Smart Format Selection**: Auto-detects best audio/video quality.  
+- **Batch Processing**: Download multiple URLs/songs at once.  
+- **Progress Tracking**: Real-time download status.  
+- **Cross-Platform**: Works on Windows, macOS, Linux (EXE for Windows only).  
 
-## 📄 License
+---
+
+## **🛠️ Usage Guide**  
+### **Single Download**  
+1. Choose `1. Enter URL` → Paste YouTube link.  
+2. Select format:  
+   - `A` for MP3 audio  
+   - `1/2/3` for video resolutions  
+
+### **Batch Mode**  
+1. Choose `2. Batch download` → Enter multiple URLs/song names (one per line).  
+2. Press **Enter twice** to start.  
+
+### **Open Download Folder**  
+- Use option `3` to quickly access downloaded files.  
+
+---
+
+## **📜 License**  
+MIT © [x2-Ankit](https://github.com/x2-Ankit)  
+
+---
+
+## **📸 Preview**  
+![image](https://github.com/user-attachments/assets/d688af3e-e5d7-4c81-b6d8-b3ab86c37e4b)
+
+
+
+---
+
+### **Need Help?**  
+- **Report Bugs**: [Open an Issue](https://github.com/x2-Ankit/Downloader/issues)  
+- **Contribute**: PRs welcome!  
+
+🔗 **Repo Link**: [https://github.com/x2-Ankit/Downloader](https://github.com/x2-Ankit/Downloader)  
+
+---
+
+### **Notes for Developers**  
+- The script handles **PyInstaller paths** via `resource_path()`.  
+- Uses **threaded downloads** (`ThreadPoolExecutor`) for batch mode.  
+- Outputs are saved to `~/Desktop/Downloads/`.  
+
+---
+
+**Let me know if you'd like to add:**  
+- A troubleshooting section  
+- More detailed developer docs (e.g., modifying formats)  
+- Credits for dependencies (e.g., `yt-dlp`)  
+
+🚀 Happy downloading!
