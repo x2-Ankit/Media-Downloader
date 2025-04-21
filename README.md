@@ -15,7 +15,7 @@ A **powerful Python-based YouTube Downloader** with support for **audio (MP3)**,
 3. Follow the on-screen menu to download videos/audio.  
 
 **Features for EXE Users:**  
-✅ Simple GUI-like interface  
+✅ Simple CL interface  
 ✅ Downloads to `Desktop/Downloads` automatically  
 ✅ Supports **URLs** and **song name searches**  
 ✅ Batch download multiple links  
