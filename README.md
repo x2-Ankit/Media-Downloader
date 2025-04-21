@@ -1,100 +1,71 @@
-# 🎬 Video & Audio Downloader
+# 📥 YouTube Video/Audio Downloader (Command-Line)
 
-A simple Python-based downloader that allows you to download high-quality **audio** or **video** from YouTube and other platforms like Instagram, Facebook, Twitter, etc. It uses `yt_dlp` under the hood and provides the **best available formats**, with easy-to-follow CLI interaction.
+A simple and efficient command-line based YouTube downloader using `yt-dlp`.
 
 ---
 
 ## ⚙️ Features
 
-- 📥 Download **audio only** (best quality)
-- 📹 Download top 3 **video formats**
-- 🎧 Merges video with best audio (for full video download)
-- 💾 Saves files in a custom folder: `~/Desktop/Music & Video`
-- 🌐 Supports multiple platforms
-- 🧠 Automatically picks the best formats available
-- 💡 Neatly shows file sizes and quality info
+- 🔗 Accepts YouTube video URLs or search queries
+- 🎵 Option to download audio only (MP3)
+- 📽️ Option to download best available video (MP4)
+- 📂 Custom download directory
+- 🧠 Auto-detects type (audio/video) based on input
+- 💻 No GUI — pure command-line speed and simplicity
 
 ---
 
-## 📦 Requirements
+## 🔧 How to Use
 
-- Python 3.6 or higher
-- [`yt_dlp`](https://github.com/yt-dlp/yt-dlp)
+1. **Install Requirements**
+   ```bash
+   pip install yt-dlp
+   ```
 
-Install with pip:
+2. **Run the script**
+   ```bash
+   python yt_downloader.py
+   ```
 
+3. **Follow the prompts**:
+   - Paste YouTube link or search query
+   - Choose download type: audio/video
+   - Set your download location
+
+---
+
+## 🛠 Build `.exe` with Custom Icon
+
+If you want to create a `.exe` version of this script with a **custom icon**:
+
+### ✅ Requirements:
+- Python 3.x
+- PyInstaller
+- `.ico` file for icon
+
+### 🔨 Build Command:
 ```bash
-pip install yt-dlp
+pyinstaller --onefile --noconsole --icon=icon.ico yt_downloader.py
 ```
+
+- Output will be inside the `dist/` folder
+- It will run silently in console mode without showing a terminal
 
 ---
 
-## 🚀 How to Use
+## 👨‍💻 For Developers
 
-1. **Run the script**:
+If you'd like to view or modify the source code:
 
-```bash
-python downloader.py
-```
+- Download the `yt_downloader.py` file
+- Customize it to fit your needs
+- Recompile to `.exe` using the steps above
 
-2. **Paste the video URL** when prompted.
-
-3. **Select an option**:
-   - `A` → Download best audio only
-   - `1`/`2`/`3` → Download one of the top 3 video formats with audio merged
-
-4. **Exit anytime** by typing `exit`.
+You're free to tweak it and extend its functionality however you want!
 
 ---
+## 🧊 Credits
 
-## 📁 Output Location
-
-All downloaded files will be saved to:
-
-```
-~/Desktop/Music & Video
-```
-
----
-
-## 🧠 Format Selection Logic
-
-- 🎵 **Best Audio**: Highest available audio bitrate (abr)
-- 🎥 **Top 3 Videos**: Based on resolution (height) and FPS
-- 📽️ Videos are merged with best available audio using `yt_dlp`
-
----
-
-## 💻 Example Output
-
-```
-🎬 Video & Audio Downloader 🎬
-🚀 Supports: YouTube, Instagram, Facebook, Twitter, etc.
-
-🔗 Enter video URL : > https://youtube.com/...
-
-🎥 Available Options for Some Cool Video
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎵 [A] Audio Only  160 kbps (m4a) - 4.83 MB
-📽️ [1] 1080p - mp4 - 30 FPS - 23.54 MB
-📽️ [2] 720p - mp4 - 30 FPS - 15.02 MB
-📽️ [3] 480p - mp4 - 30 FPS - 8.45 MB
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
----
-
-## 📌 Note
-
-- If file size shows as `Unknown`, it may still be downloaded normally.
-- All downloaded videos are saved as `.mp4`, and audios as `.mp3`.
-
----
-
-## 🛠️ Author
-
-**Ankit Tripathy / x2-Ankit**  
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) for the powerful backend
 
 ## 📄 License
-
-This project is open source and available under the [MIT License]
