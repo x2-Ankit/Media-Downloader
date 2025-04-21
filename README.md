@@ -91,7 +91,7 @@ MIT © [x2-Ankit](https://github.com/x2-Ankit)
 - **Report Bugs**: [Open an Issue](https://github.com/x2-Ankit/Downloader/issues)  
 - **Contribute**: PRs welcome!  
 
-🔗 **Repo Link**: [https://github.com/x2-Ankit/Downloader](https://github.com/x2-Ankit/Downloader)  
+🔗 **Repo Link**: [https://github.com/x2-Ankit/Downloader](https://github.com/x2-Ankit/Media-Downloader)  
 
 ---
 
