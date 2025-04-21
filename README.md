@@ -10,7 +10,7 @@ A **powerful Python-based YouTube Downloader** with support for **audio (MP3)**,
 
 ## **📥 For End Users (EXE)**  
 ### **Download & Run**  
-1. Download the latest **`Media Dwnld.exe`** from Above.  
+1. Download the latest **`Media Downloader.exe`** from Above.  
 2. Double-click to run (no installation needed).  
 3. Follow the on-screen menu to download videos/audio.  
 
