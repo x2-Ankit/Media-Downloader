@@ -34,11 +34,6 @@ A **powerful Python-based YouTube Downloader** with support for **audio (MP3)**,
    cd Downloader
    ```
 
-2. **Install dependencies**:  
-   ```sh
-   pip install -r requirements.txt
-   ```
-
 3. **Run the script**:  
    ```sh
    python downloader.py
