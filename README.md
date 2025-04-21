@@ -1,8 +1,4 @@
-Here’s the **finalized README.md** for your **YouTube Downloader** project, clearly distinguishing between **end-users (EXE)** and **developers (source code)**:
-
----
-
-# **🎬 YouTube Downloader** 🚀  
+🎬 Media Downloader 🚀  
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)  
