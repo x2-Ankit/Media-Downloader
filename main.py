@@ -1,3 +1,5 @@
+#only for developers who want to modify 
+
 import os
 import sys
 import yt_dlp
