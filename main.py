@@ -1,3 +1,4 @@
+# Copyright (c) 2025 x2-Ankit. Licensed under MIT License.
 #only for developers who want to modify 
 
 import os
