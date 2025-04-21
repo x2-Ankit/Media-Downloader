@@ -25,18 +25,22 @@ A **powerful Python-based YouTube Downloader** with support for **audio (MP3)**,
 ## **👨‍💻 For Developers (Source Code)**  
 ### **Prerequisites**  
 - Python 3.7+  
-- `yt-dlp` (included in `requirements.txt`)  
+- `yt-dlp`
+
+```sh
+   pip install yt-dlp)
+   ```
 
 ### **Setup**  
 1. **Clone the repo**:  
    ```sh
-   git clone https://github.com/x2-Ankit/Downloader.git
+   git clone https://github.com/x2-Ankit/Media-Downloader.git
    cd Downloader
    ```
 
 3. **Run the script**:  
    ```sh
-   python downloader.py
+   python main.py
    ```
 
 ### **🔧 Rebuild EXE with PyInstaller**  
